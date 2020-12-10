@@ -16,13 +16,6 @@ ECE 4122
 #include <thread>
 
 //using std threads //using single thread
-
-//using std::atomic;
-//using std::chrono::high_resolution_clock;
-//using std::chrono::duration_cast;
-//using std::chrono::milliseconds;
-
-
 //computes the factorial of r where r = row index
  long long int  fact(long long int r)
 {
@@ -66,7 +59,6 @@ int main(int argc, char* argv[])
    long long int a;
    int b;
 
-
    //turn matrix row and col lenghts into indices of desired value
    // col (n) stay the same row changes to row + col
    r = r + n;
@@ -77,9 +69,7 @@ int main(int argc, char* argv[])
     //auto endTime = high_resolution_clock::now();
     //auto duration  = duration_cast<milliseconds>(endTime - startTime).count();
     //std::cout << "Execution time = " << duration << " ms" << std::endl;
-
     std::cout << "Number of Routes: "<< std::fixed << out << std::endl;
-
 return 0;
  //}
 
